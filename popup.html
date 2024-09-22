@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Screen Recorder</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Screen Recorder</h1>
+        <p class="subtitle">Record your screen and transcribe audio</p>
+      </header>
+
+      <main>
+        <h2>Record Your Screen</h2>
+        <video
+          id="videoPreview"
+          autoplay
+          style="width: 100%; height: auto; display: none"
+          aria-label="Screen Recording Preview"
+        ></video>
+        <div class="button_cont">
+          <button
+            id="start_video"
+            class="btn start"
+            aria-label="Start Recording"
+          >
+            🎥 Start Recording
+          </button>
+          <button
+            id="stop_video"
+            class="btn stop"
+            disabled
+            aria-label="Stop Recording"
+          >
+            🛑 Stop Recording
+          </button>
+        </div>
+        <div id="status" class="status">
+          <p>Recording status: <span id="status_text">Not started</span></p>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Screen Recorder</p>
+      </footer>
+    </div>
+
+    <script src="./js/popup.js"></script>
+  </body>
+</html>
